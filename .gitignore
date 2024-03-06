@@ -163,3 +163,7 @@ cython_debug/
 
 # Ignore Wittmann Tours Blog Posts
 wt-blogposts/*
+
+# Ignore personal files
+20-local-llama-on-mac/archive/*
+20-local-llama-on-mac/wip/*
