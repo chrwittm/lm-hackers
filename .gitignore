@@ -170,3 +170,4 @@ wt-blogposts/*
 # Ignore personal files
 20-local-llama-on-mac/archive/*
 20-local-llama-on-mac/wip/*
+30-rag/archive/*
