@@ -50,6 +50,13 @@ class Llama2ChatVersion2:
         """Wraps text in a <span> with specified font size, defaults to 16."""
         return f"<span style='font-size: {font_size}px;'>{text}</span>"
 
+    def prompt_llama2_without_printing(self, user_prompt):
+        """Processes user prompt, displays Llama2 response formatted in Markdown."""
+        self._chat_messages.append_user_message(user_prompt)
+        llama2_response = self._get_llama2_response()
+        self._chat_messages.append_assistant_message(llama2_response)
+        return llama2_response
+
     def prompt_llama2(self, user_prompt):
         """Processes user prompt, displays Llama2 response formatted in Markdown."""
         self._chat_messages.append_user_message(user_prompt)
